@@ -21,6 +21,7 @@ namespace CarAPI
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
                     webBuilder.UseStartup<Startup>();
+                    webBuilder.UseIISIntegration();
                 });
     }
 }
